@@ -6,6 +6,7 @@ El objetivo es aprender y aplicar conceptos fundamentales como la creacion de hi
 ## Contenido
 
 - [`SaiyanRace.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulacion de una carrera entre hilos utilizando la interfaz `Runnable`.
+- [`BattlePokemon.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulación de una batalla por turnos entre dos hilos utilizando sincronización y comunicación entre threads.
 
 ## Tecnologias
 
@@ -21,8 +22,9 @@ Comprender los fundamentos de la **programación con hilos (threads)** en Java, 
 
 - Creacion y manejo de hilos en java
 - Manejo de la interfaz Runnable
-- Uso de la palabra clave `volatile` para evitar condiciones de carrera  
-- Sincronización básica y control de flujo entre hilos  
+- Uso de la palabra clave `volatile` para variables compartidas
+- Sincronización entre hilos con `synchronized`
+- Coordinación de hilos mediante `wait()` y `notifyAll()`
 
 ## Ejecución
 
