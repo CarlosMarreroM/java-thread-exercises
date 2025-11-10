@@ -5,9 +5,12 @@ El objetivo es aprender y aplicar conceptos fundamentales como la creacion de hi
 
 ## Contenido
 
-- [`SaiyanRace.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulacion de una carrera entre hilos utilizando la interfaz `Runnable`.
+- [`SaiyanRace.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulacion de una carrera entre dos hilosrepresentando a dos persinajes de dragon ball.
 - [`BattlePokemon.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulación de una batalla por turnos entre dos hilos utilizando sincronización y comunicación entre threads.
 - [`HorcruxHunters.java`](src/main/java/thread/exercises/HorcruxHunters.java): Simulación de una búsqueda competitiva entre tres hilos, donde el primero en encontrar un objetivo detiene a los demás.
+- [`DroisFactory.java`](src/main/java/thread/exercises/DroisFactory.java): Simulación de una fábrica de drois con múltiples hilos productores y consumidores, utilizando una cola compartida y sincronizacion.
+- [`QuidditchMatch.java`](src/main/java/thread/exercises/QuidditchMatch.java): Simulación de un partido de Quidditch con varios hilos representando los dos equipos y el buscador, utilizando sincronización para manejar eventos del juego.
+-[`JediExplorers.java](src/main/java/thread/exercises/JediExplorers.java): Simulación de una búsqueda entre dos hilos, donde el primero en hallar una pista interrumpe la exploración de los demás.
 
 ## Tecnologias
 
