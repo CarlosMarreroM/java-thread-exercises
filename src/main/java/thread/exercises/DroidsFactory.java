@@ -11,11 +11,19 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class DroidsFactory {
     private BlockingQueue<String> assembly = new LinkedBlockingQueue<>();
-    int droidCount = 10;
-    private volatile int activatedDroids = 0;
+    private int droidCount = 10;
+    private static volatile int activatedDroids = 0;
     private final Random random = new Random();
 
     DroidsFactory() {}
+
+    public int getDroidCount() {
+        return droidCount;
+    }
+
+    public int getActivatedDroids() {
+        return activatedDroids;
+    }
 
     private class Assembler implements Runnable {
 
