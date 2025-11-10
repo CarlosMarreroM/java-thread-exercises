@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class HorcruxHunters {
     private static volatile boolean foundHorcrux = false;
-    private String winner;
+    private static String winner;
 
     public String getWinner() {
         return winner;
@@ -40,8 +40,8 @@ public class HorcruxHunters {
             }
 
             if(!foundHorcrux) {
-                winner = name;
                 foundHorcrux = true;
+                winner = name;
                 System.out.println(winner + " encontro un Horrocrux en " + location + ". ¡Busqueda terminada!");
             }
         }

@@ -14,11 +14,11 @@ public class BattlePokemonTest {
         System.setOut(new PrintStream(salida));
 
         BattlePokemon battle = new BattlePokemon();
-        BattlePokemon.main();
+        BattlePokemon.main(null);
 
         String textOut = salida.toString();
         assertTrue(textOut.contains("La batalla ha terminado."));
         assertTrue(BattlePokemon.isGameOver());
-        //assertTrue(battle.getHpCharmander() <= 0 || battle.getHpPikachu() <= 0);
+        assertTrue(battle.getHpCharmander() <= 0 || battle.getHpPikachu() <= 0);
     }
 }

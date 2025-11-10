@@ -9,8 +9,8 @@ import java.util.Random;
  */
 public class BattlePokemon {
     private static volatile boolean gameOver = false;
-    private int hpPikachu = 100;
-    private int hpCharmander = 100;
+    private static int hpPikachu = 100;
+    private static int hpCharmander = 100;
     private String turn = "Pikachu";
     private final Object lock = new Object();
     private final Random random = new Random();
@@ -31,7 +31,7 @@ public class BattlePokemon {
         int damage = random.nextInt(16) + 5;
         int hpTarget = 0;
 
-        if(target.equals("Charmander")) {
+        if (target.equals("Charmander")) {
             hpTarget = hpCharmander -= damage;
             if (hpCharmander < 0)
                 hpCharmander = 0;
@@ -55,12 +55,12 @@ public class BattlePokemon {
         }
     }
 
-    private class ThreadPikachu implements Runnable {
+    protected class ThreadPikachu implements Runnable {
 
         @Override
         public void run() {
-            while(!gameOver) {
-                synchronized(lock) {
+            while (!gameOver) {
+                synchronized (lock) {
                     while (!turn.equals("Pikachu") && !gameOver) {
                         try {
                             lock.wait();
@@ -69,7 +69,8 @@ public class BattlePokemon {
                         }
                     }
 
-                    if(gameOver) break;
+                    if (gameOver)
+                        break;
 
                     attack("Pikachu", "Charmander");
                     turn = "Charmander";
@@ -79,7 +80,7 @@ public class BattlePokemon {
         }
     }
 
-    private class ThreadCharmander implements Runnable {
+    protected class ThreadCharmander implements Runnable {
 
         @Override
         public void run() {
@@ -93,7 +94,8 @@ public class BattlePokemon {
                         }
                     }
 
-                    if (gameOver) break;
+                    if (gameOver)
+                        break;
 
                     attack("Charmander", "Pikachu");
                     turn = "Pikachu";
@@ -103,7 +105,7 @@ public class BattlePokemon {
         }
     }
 
-    public static void main() {
+    public static void main(String[] args) {
         BattlePokemon battle = new BattlePokemon();
 
         Thread pikachu = new Thread(battle.new ThreadPikachu());

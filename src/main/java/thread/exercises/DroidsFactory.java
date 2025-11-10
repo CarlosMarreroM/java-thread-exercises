@@ -51,9 +51,7 @@ public class DroidsFactory {
                     Thread.currentThread().interrupt();
                 }
             }
-            
         }
-
     }
 
     public static void main(String[] args) {

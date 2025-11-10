@@ -24,11 +24,11 @@ public class HorcruxHuntersTest {
 
         List<String> listWinner = List.of("Harry", "Hermione", "Ron");
 
-        //assertTrue(listWinner.contains(hunt.getWinner()), "Valor: " + hunt.getWinner());
+        assertTrue(listWinner.contains(hunt.getWinner()), "Valor: " + hunt.getWinner());
 
         int ocurrencias = textOut.split("encontro un Horrocrux", -1).length - 1;
 
-        assertEquals(ocurrencias, 1);
+        assertEquals(1,ocurrencias);
 
     }
 }
