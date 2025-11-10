@@ -10,7 +10,8 @@ El objetivo es aprender y aplicar conceptos fundamentales como la creacion de hi
 - [`HorcruxHunters.java`](src/main/java/thread/exercises/HorcruxHunters.java): Simulación de una búsqueda competitiva entre tres hilos, donde el primero en encontrar un objetivo detiene a los demás.
 - [`DroisFactory.java`](src/main/java/thread/exercises/DroisFactory.java): Simulación de una fábrica de drois con múltiples hilos productores y consumidores, utilizando una cola compartida y sincronizacion.
 - [`QuidditchMatch.java`](src/main/java/thread/exercises/QuidditchMatch.java): Simulación de un partido de Quidditch con varios hilos representando los dos equipos y el buscador, utilizando sincronización para manejar eventos del juego.
--[`JediExplorers.java](src/main/java/thread/exercises/JediExplorers.java): Simulación de una búsqueda entre dos hilos, donde el primero en hallar una pista interrumpe la exploración de los demás.
+- [`JediExplorers.java`](src/main/java/thread/exercises/JediExplorers.java): Simulación de una búsqueda entre dos hilos, donde el primero en hallar una pista interrumpe la exploración de los demás.
+- [`TardisRace.java`](src/main/java/thread/exercises/TardisRace.java): Simulación de una carrera entre hilos representando diferentes eras temporales
 
 ## Tecnologias
 
