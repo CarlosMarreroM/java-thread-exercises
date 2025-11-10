@@ -7,6 +7,7 @@ El objetivo es aprender y aplicar conceptos fundamentales como la creacion de hi
 
 - [`SaiyanRace.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulacion de una carrera entre hilos utilizando la interfaz `Runnable`.
 - [`BattlePokemon.java`](src/main/java/thread/exercises/SaiyanRace.java): Simulación de una batalla por turnos entre dos hilos utilizando sincronización y comunicación entre threads.
+- [`HorcruxHunters.java`](src/main/java/thread/exercises/HorcruxHunters.java): Simulación de una búsqueda competitiva entre tres hilos, donde el primero en encontrar un objetivo detiene a los demás.
 
 ## Tecnologias
 
