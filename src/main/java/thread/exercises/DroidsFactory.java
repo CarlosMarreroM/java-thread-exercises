@@ -78,7 +78,7 @@ public class DroidsFactory {
             Thread.currentThread().interrupt();
         }
 
-        System.out.println("Todos los droides han sido ensamblados y activados. Total activados: " + factory.activatedDroids);
+        System.out.println("Todos los droides han sido ensamblados y activados. Total activados: " + DroidsFactory.activatedDroids);
     }
 
 }
