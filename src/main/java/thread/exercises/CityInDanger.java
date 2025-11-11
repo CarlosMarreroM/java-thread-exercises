@@ -2,6 +2,12 @@ package thread.exercises;
 
 import java.util.Random;
 
+/*
+ * Simula una situación en la que dos héroes, Superman y Batman,
+ * intentan salvar diferentes zonas de una ciudad en peligro. El primer
+ * héroe que logra salvar todas sus zonas neutraliza la amenaza y detiene
+ * al otro héroe.
+ */
 public class CityInDanger {
     private static volatile boolean amenazaNeutralizada = false;
     private String ganador = null;
